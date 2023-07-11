@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Adam-Bold;
+  src: url(adam/Adam-Bold.ttf);
+}
+
+@font-face {
+  font-family: Adam-Light;
+  src: url(adam/Adam-Light.ttf);
+}
+
+@font-face {
+  font-family: Qaz;
+  src: url(qaz-font/Qaz-ZV74m.ttf);
+}
+
+:root {  
+  --purple: rgb(103, 31, 162);
+  --violet: rgb(184, 34, 152);
+  --pink: rgb(175, 29, 68);
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes slidingarrow {
+  0%   {padding-bottom: 250px;}
+  50%  {padding-bottom: 270px;}
+  100% {padding-bottom: 250px;}
+}
+
+html {
+  background-image: linear-gradient(to bottom right, black, rgb(52, 52, 52));
+  height: 200vh;
+  color: white;
+}
+
+.hook {
+  text-align: center;
+  padding-top: 450px;
+  font-family: Adam-Light, sans-serif;
+  font-size: 40px;
+}
+
+.magic {
+  font-family: Qaz;
+  animation: background-pan 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.arrow {
+  animation: slidingarrow 1s ease-in-out infinite;
+  rotate: 180deg;
+  text-align: center;
+  padding-bottom: 250px;
+  font-family: Adam-Light, sans-serif;
+  font-size: 60px;
+}
