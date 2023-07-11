@@ -77,7 +77,11 @@ html {
 	line-height:60px;
 	-webkit-font-smoothing: antialiased;
 }
-
+p {
+  font-family: Adam-Light, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 .fa-angle-double-down:before {content: "\f107";}
 
 .bounce {
@@ -130,11 +134,15 @@ section:nth-child(2) {
 }
 section:nth-child(3) {
   color: #ffffff;
-  background: #525353;
+  background-image: linear-gradient(to bottom right, rgb(126, 126, 126), rgb(0, 0, 0));
 }
 section:nth-child(4) {
   color: #ffffff;
   
+}
+section:nth-child(5) {
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #525353);
 }
 section .container {
   margin: 100px;
@@ -156,11 +164,13 @@ section .text-container .text-box {
   padding: 20px;
   background: #878787;
 }
+
 section .text-container .text-box h3 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 @media (max-width: 900px) {
@@ -182,7 +192,7 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 .active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
+  animation: fade-bottom 1.5s ease-in;
 }
 .active.fade-left {
   animation: fade-left 1s ease-in;
@@ -193,7 +203,7 @@ section .text-container .text-box h3 {
 
 @keyframes fade-bottom {
   0% {
-    transform: translateY(50px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -224,6 +234,7 @@ section .text-container .text-box h3 {
 }
 
 .sinc {
+  letter-spacing: 10px;
   text-align: center;
   font-size: 80px;
   text-transform: uppercase;
@@ -244,8 +255,8 @@ a {
   text-decoration: none;
 }
 footer {
-  background-color: #aaa9ad;
-  padding-top: 5px;
+  background-color: #000000;
+  padding-top: 0px;
   padding-bottom: 10px;
 }
 .footer__redes-wrapper {
@@ -265,7 +276,7 @@ footer {
 .footer__link {
   font-family: Adam-Bold, sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -273,12 +284,51 @@ footer {
   margin-right: 8px;
   font-family: Adam-Bold, sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 .footer__texto {
   font-family: Adam-Bold, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: white;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url(layered-waves-haikei.svg);
+}
+
+.html-css-js {
+  margin: 20px;
+  padding: 20px;
+  background: none;
+}
+.html-css-js h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.html-css-js b {
+  font-family: Adam-Light sans-serif;
+  font-weight: bold;
+}
+
+.highlight-blue {
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(0, 20, 255, 0.2),
+    rgba(0, 20, 255, 0.7) 95%,
+    rgba(0, 20, 255, 0.1)
+  );
 }
