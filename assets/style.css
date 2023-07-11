@@ -237,3 +237,40 @@ section .text-container .text-box h3 {
   padding-top: -80px;
   padding-bottom: 80px;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&display=swap");
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__redes-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 45px auto;
+}
+.footer__redes-wrapper li {
+  display: inline-block;
+}
+.footer__redes-wrapper li:hover {
+  color: var(--gray);
+}
+.footer__link {
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  font-size: rem(14);
+}
+.footer .fab {
+  margin-right: 8px;
+}
+.footer__texto {
+  color: var(--light-gray);
+  text-align: center;
+}
