@@ -30,12 +30,15 @@
     background-position: -200% center;
   }
 }
-
-
+* {
+  font-family: Adam-Light, sans-serif;
+}
+body {
+  margin: 0;
+}
 
 html {
   background-image: linear-gradient(to bottom right, black, rgb(52, 52, 52));
-  height: 200vh;
   color: white;
   scroll-behavior: smooth;
 }
@@ -111,4 +114,126 @@ html {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1) {
+  color: #ffffff;
+}
+section:nth-child(2) {
+  color: #ffffff;
+  background: #525353;
+}
+section:nth-child(3) {
+  color: #ffffff;
+}
+section:nth-child(4) {
+  color: #ffffff;
+  background: #525353;
+}
+section .container {
+  margin: 100px;
+}
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #878787;
+}
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sinc {
+  text-align: center;
+  font-size: 80px;
+  text-transform: uppercase;
+  padding-top: -80px;
+  padding-bottom: 80px;
+}
+
+.sincMotto {
+  text-align: center;
+  font-size: 60px;
+  padding-top: -80px;
+  padding-bottom: 80px;
 }
