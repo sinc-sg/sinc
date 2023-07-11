@@ -30,9 +30,9 @@
 }
 
 @keyframes slidingarrow {
-  0%   {padding-bottom: 250px;}
-  50%  {padding-bottom: 270px;}
-  100% {padding-bottom: 250px;}
+  0%   {padding-bottom: 220px;}
+  50%  {padding-bottom: 250px;}
+  100% {padding-bottom: 220px;}
 }
 
 html {
@@ -69,7 +69,7 @@ html {
   animation: slidingarrow 1s ease-in-out infinite;
   rotate: 180deg;
   text-align: center;
-  padding-bottom: 250px;
+  padding-bottom: 220px;
   font-family: Adam-Light, sans-serif;
   font-size: 60px;
 }
