@@ -127,14 +127,14 @@ section:nth-child(1) {
 }
 section:nth-child(2) {
   color: #ffffff;
-  background: #525353;
 }
 section:nth-child(3) {
   color: #ffffff;
+  background: #525353;
 }
 section:nth-child(4) {
   color: #ffffff;
-  background: #525353;
+  
 }
 section .container {
   margin: 100px;
@@ -238,15 +238,15 @@ section .text-container .text-box h3 {
   padding-bottom: 80px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&display=swap");
 
-img {
-  width: 100%;
-  vertical-align: top;
-}
+
 a {
   text-decoration: none;
-  color: inherit;
+}
+footer {
+  background-color: #aaa9ad;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .footer__redes-wrapper {
   display: flex;
@@ -263,14 +263,22 @@ a {
   color: var(--gray);
 }
 .footer__link {
+  font-family: Adam-Bold, sans-serif;
+  font-weight: bold;
+  color: black;
   text-transform: uppercase;
-  font-family: var(--title-font);
-  font-size: rem(14);
+  font-size: 20px;
 }
 .footer .fab {
   margin-right: 8px;
+  font-family: Adam-Bold, sans-serif;
+  font-weight: bold;
+  color: black;
 }
 .footer__texto {
-  color: var(--light-gray);
+  font-family: Adam-Bold, sans-serif;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
 }
