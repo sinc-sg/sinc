@@ -166,6 +166,15 @@ section .meetTheTeam {
   text-align: center;
   text-transform: uppercase;
 }
+section .contactUs {
+  font-size: 60px;
+  bottom: -345px;
+  left: 100px;
+  position: absolute;
+  padding-bottom: -20px;
+  text-align: center;
+  text-transform: uppercase;
+}
 section .text-container {
   display: grid;
   grid-auto-flow: column;
@@ -252,10 +261,9 @@ section .text-container .text-box h3 {
 .sinc {
   letter-spacing: 10px;
   text-align: center;
-  min-width: 550px;
   max-width: 550px;
   max-height: 170px;
-  font-size: clamp(9.5rem, 15vw, 28rem);
+  font-size: clamp(9.5rem, 15vw, 12rem);
   text-transform: uppercase;
   color: white;
   white-space: nowrap;
@@ -776,4 +784,11 @@ i {
     scale: 0.6;
     margin-bottom: 0rem;
   }
+}
+
+.section-last {
+  min-height: 37vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
