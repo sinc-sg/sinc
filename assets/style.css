@@ -134,17 +134,17 @@ section {
   justify-content: center;
   align-items: center;
 }
-section:nth-child(1) {
-  color: #ffffff;
-}
 section:nth-child(2) {
   color: #ffffff;
 }
 section:nth-child(3) {
   color: #ffffff;
-  background-image: linear-gradient(to bottom right, rgb(126, 126, 126), rgb(0, 0, 0));
 }
 section:nth-child(4) {
+  color: #ffffff;
+  background-image: linear-gradient(to bottom right, rgb(126, 126, 126), rgb(0, 0, 0));
+}
+section:nth-child(5) {
   color: #ffffff;
   background-image: linear-gradient(to bottom, rgb(0, 0, 0), #525353);
   
