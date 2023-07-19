@@ -1,3 +1,9 @@
+$(document).ready(function(){
+  $('.toggle').click(function(){
+      $('.menu').toggleClass('active');
+  });
+});
+
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 

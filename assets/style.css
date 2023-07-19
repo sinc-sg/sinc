@@ -793,3 +793,58 @@ i {
   justify-content: center;
   align-items: center;
 }
+
+.toggle{
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 2
+}
+.toggle a{
+  text-decoration: none;
+  color: #262626;
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 1;
+  transition: 0.5s;
+}
+.nav{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  list-style: none;
+}
+.navoptions {
+list-style: none;
+}
+.nav .navoptions a{
+  padding: 10px;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.nav .navoptions a:hover{
+  background: #5c6fff;
+  border-radius: 2em;
+}
+.menu.active{
+  left: 0;
+  overflow: auto;
+}
