@@ -73,7 +73,7 @@ html {
 }
 
 .magic:hover {
-  opacity: 0;
+  -webkit-animation: bounce 2s 1;
 }
 
 .fa {
