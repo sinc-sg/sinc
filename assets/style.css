@@ -72,6 +72,10 @@ html {
   cursor: default;
 }
 
+.magic:hover {
+  opacity: 0;
+}
+
 .fa {
 	width: 60px;
 	display: block;
