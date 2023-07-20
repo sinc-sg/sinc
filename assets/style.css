@@ -813,7 +813,7 @@ i {
   position: fixed;
   top: 40px;
   left: 40px;
-  z-index: 2
+  z-index: 100000;
 }
 .toggle a{
   text-decoration: none;
@@ -832,6 +832,7 @@ i {
   background: #000000;
   z-index: 1;
   transition: 0.5s;
+
 }
 .nav{
   margin: 0;
@@ -842,6 +843,7 @@ i {
   transform: translate(-50%, -50%);
   text-align: center;
   list-style: none;
+  
 }
 .navoptions {
 list-style: none;
@@ -862,4 +864,5 @@ list-style: none;
 .menu.active{
   left: 0;
   overflow: auto;
+  z-index: 100;
 }
